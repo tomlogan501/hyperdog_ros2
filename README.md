@@ -1,6 +1,14 @@
 # hyperdog_ros2
 
-## Demo Video: [!HyperDog Demo](https://youtu.be/Dx1U2J1avO0)
+## Demo Video:
+  <div align="center">
+      <a href="https://youtu.be/Dx1U2J1avO0">
+     <img 
+      src="https://img.youtube.com/vi/Dx1U2J1avO0/0.jpg" 
+      alt="" 
+      style="width:100%;">
+      </a>
+    </div>
 
 ## Contains
 This repository contains ros2 packages for quadruped robot Hyperdog.
