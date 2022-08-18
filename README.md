@@ -67,7 +67,7 @@ packages are :
  
  # build the pkg
  cd .. 
- colcon build
+ colcon build --symlink-install
  ```
  
  2. build `micro_ros_agent`  in hyperdog_ws from the git repository https://github.com/micro-ROS/micro_ros_setup/tree/foxy. follow instuction and build the micro_ros_agent.
