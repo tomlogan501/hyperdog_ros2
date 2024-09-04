@@ -1,15 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<!--
-    _____________________________________________________________________
-        include this file into: /description/hyperdog.urdf.xacro 
-        using following line: 
-                    <xacro:include filename="hyperdog_gazebo.xacro" /> 
-    _____________________________________________________________________ 
-    * Gazebo is unable to use the same <material> tags that are already in the URDF (that RViz uses).
-    Instead, we need to add gazebo tags for our links that refer to Gazebo materials
--->
 
     <xacro:include filename="physics.xacro" /> 
 
@@ -52,10 +43,12 @@
     <xacro:macro name="gz_foot">
         <mu1>0.9</mu1>
         <mu2>0.9</mu2>
-        <fdir1>1 1 0</fdir1>
+        <fdir1>1 0 0</fdir1>
         <kp value="2147483647.0" />
         <kd value="100.0" />
-        <maxVel>0.01</maxVel>
+        <maxVel>0.0</maxVel>
+        <maxContacts>1</maxContacts>
+        <gravity>true</gravity>
         <self_collide>1</self_collide>
         <minDepth>0.001</minDepth> 
 

@@ -25,7 +25,7 @@
 #include "chrono"
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/joy.hpp"
-#include "trajectory_msgs/msg/joint_trajectory.hpp"
+//#include "trajectory_msgs/msg/joint_trajectory.hpp" 
 
 #include "hyperdog_msgs/msg/joy_ctrl_cmds.hpp"
 // #include "hyperdog_msgs/msg/ctrl_variables.hpp"

@@ -1,16 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<!-- 
-    * Autor: nipun.dhananjaya@gmail.com
-    * Date:  13.03.2023
-
-
-    _____________________________________________________________________
-        include this file into: /description/hyperdog.urdf.xacro 
-        using following line: 
-                    <xacro:include filename="hyperdog_urdf_links.xacro" /> 
-    _____________________________________________________________________ -->
 
     <xacro:include filename="consts.xacro" /> 
     <xacro:include filename="physics.xacro" /> 

@@ -1,14 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     
-<!-- ************* JOINT CONTROLLER GAZEBO PLUGIN ************** -->
-
-    <!-- 
-    _____________________________________________________________________
-        include this file into: /description/hyperdog.urdf.xacro 
-        using following line: 
-                    <xacro:include filename="gazebo_ros2_control_plugin.xacro" /> 
-    _____________________________________________________________________ -->
 
 
 
@@ -43,6 +35,11 @@
         </joint>
 
         <joint name="FR_lleg_joint">
+            <param name="pos_kp">100000</param>
+            <param name="pos_ki">0</param>
+            <param name="pos_kd">0</param>
+            <param name="pos_max_integral_error">10000</param>
+
             <command_interface name="position">
                 <param name="min">0.45</param>
                 <param name="max">2.3562</param>
@@ -79,6 +76,11 @@
         </joint>
         
         <joint name="FL_lleg_joint">
+            <param name="pos_kp">200000</param>
+            <param name="pos_ki">0</param>
+            <param name="pos_kd">0</param>
+            <param name="pos_max_integral_error">10000</param>
+
             <command_interface name="position">
                 <param name="min">0.45</param>
                 <param name="max">2.3562</param>
@@ -115,6 +117,11 @@
         </joint>
 
         <joint name="BR_lleg_joint">
+            <param name="pos_kp">300000</param>
+            <param name="pos_ki">0</param>
+            <param name="pos_kd">0</param>
+            <param name="pos_max_integral_error">10000</param>
+
             <command_interface name="position">
                 <param name="min">0.45</param>
                 <param name="max">2.3562</param>
@@ -151,6 +158,12 @@
         </joint>
 
         <joint name="BL_lleg_joint">
+
+            <param name="pos_kp">500000</param>
+            <param name="pos_ki">0</param>
+            <param name="pos_kd">0</param>
+            <param name="pos_max_integral_error">10000</param>
+
             <command_interface name="position">
                 <param name="min">0.45</param>
                 <param name="max">2.3562</param>
